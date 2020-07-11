@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="bg-black" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>ALL ABOUT IIT JEE</title>
+        <script src="scroll-reveal.js"></script>
+        <link rel="stylesheet" media="screen" href="style1.css" />
+        <link rel="stylesheet" media="screen" href="style2.css" />
+        <meta name="csrf-param" content="authenticity_token" />
+        <meta name="csrf-token" content="cwfY5Lhl4FFWBBxprKmpv0+CTgCMat+v0UiorWAI4Axl5kdZAeqfUy+wxP++Fxvl3nLyBkLW76MFajDdNsYmMw==" />
+    </head>
+    <body class="antialiased font-body text-white" data-controller="navigation scrollreveal" data-target="navigation.body">
+        <header class="absolute top-0 inset-x-0 pl-3 pt-4 pr-4 md:p-6 z-20">
+            <nav class="hidden fixed inset-0 z-10 flex items-center" data-target="navigation.menu">
+                <div
+                    class="fixed bg-cover bg-fixed inset-0 z-10"
+                    style="background-image: url('https://www.hawking.org.uk/assets/menu-bg-4d9a7af82c52f03df18c1eacd3f6c9522afc242d32f178b42b57f802eccd2f49.jpg');"
+                    data-target="navigation.bg"
+                ></div>
+
+                <div class="relative container mx-auto py-20 md:mt-20 px-6 z-20">
+                    <ul class="menu text-2xl md:text-4xl">
+                        <li class="active"><a aria-current="page" href="/">Home</a></li>
+                        <li class="group">
+                            <a href="/biography">Articles</a>
+						</li>
+                        <li class="group">
+                            <a href="/in-print">Mentorship-program</a>
+                        </li>
+                        <li class="group">
+                            <a href="/on-screen">Ask your peers</a>
+						</li>
+                        <li class="group">
+                            <a href="/in-words">Books</a>
+                        </li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="flex justify-between relative z-20">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <div data-controller="logo" data-action="mouseover->logo#restart" data-target="logo.logo" class="inline-block h-24 w-24 md:h-24 md:w-24 lg:h-32 lg:w-32"></div>
+                    </a>
+                </div>
+
+                <div class="flex">
+                    <div class="relative" data-controller="search">
+                        <div class="w-32 md:w-64 h-8 bg-white rounded hidden" data-target="search.input">
+                            <form class="h-full" action="/search" accept-charset="UTF-8" method="post">
+                                <input type="hidden" name="authenticity_token" value="938VG7nSERpoGifDqb4M/JxsrmCWoRN2fN1Hy7IC6eBEpy+YkuRvXHOJ6oX6rOEqP6OYmva5xB13URlgNGLCVg==" />
+                                <input type="text" name="query" id="query" placeholder="Search" class="appearence-none px-3 w-full h-full bg-transparent outline-none text-black" autocomplete="off" />
+                            </form>
+                        </div>
+
+                        <svg class="inline-block absolute right-0 inset-y-0 mt-2 mr-3 h-4 w-4 fill-current text-white cursor-pointer" viewBox="0 0 16 16" data-target="search.icon" data-action="click->search#toggle">
+                            <path d="M6 0a6 6 0 100 12A6 6 0 006 0zm0 2a4 4 0 110 8 4 4 0 010-8z" />
+                            <path d="M8.586 10L10 8.586 16.414 15 15 16.414z" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <button class="hamburger hamburger--squeeze focus:outline-none w-8 h-8 bg-white rounded-full" type="button" data-action="navigation#toggle" data-target="navigation.button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="min-h-screen w-full bg-black" role="main">
+            <section class="relative bg-splash w-full" data-controller="video">
+                <div class="fixed inset-0 h-full w-full">
+                    <video
+                        class="w-full h-full sm:object-cover"
+                        src="https://player.vimeo.com/external/404635477.hd.mp4?s=c1485f3ce9e9529ecfc474fea6094f15fb425265&profile_id=174"
+                        autoplay
+                        preload
+                        playsinline
+                        muted
+                        data-target="video.media"
+                    ></video>
+                </div>
+
+                <span class="absolute bottom-0 inset-x-0 flex justify-center z-10" data-controller="scroll-fade">
+                    <a data-controller="slow-scroll" data-action="slow-scroll#slow" data-target="slow-scroll.link" href="#news">
+                        <svg class="w-8" viewBox="0 0 24 14" data-target="scroll-fade.icon" data-action="scroll@window->scroll-fade#onScroll">
+                            <path
+                                class="fill-current text-white"
+                                d="M0 1.391C0 1.036.136.678.406.408a1.394 1.394 0 011.971 0l9.425 9.415L21.223.408a1.39 1.39 0 011.967 0 1.39 1.39 0 010 1.967L11.802 13.76.406 2.375A1.395 1.395 0 010 1.391"
+                            />
+                        </svg>
+                    </a>
+                </span>
+
+                <span class="absolute bottom-0 right-0 flex cursor-pointer mx-6 z-10">
+                    <svg class="w-8 h-8" viewBox="0 0 30 30" data-target="video.replayIcon" data-action="click->video#replay">
+                        <path class="fill-current text-white" d="M28.91 14.955c0 7.707-6.248 13.955-13.955 13.955S1 22.662 1 14.955 7.248 1 14.955 1 28.91 7.248 28.91 14.955" />
+                        <path
+                            class="fill-current text-black"
+                            d="M8.043 8.69c.543 0 .989.413 1.04.942l.004.1v3.131h3.13c.543 0 .989.414 1.04.943l.004.1c0 .543-.414.989-.943 1.04l-.1.004H8.042c-.542 0-.988-.414-1.038-.943l-.005-.1V9.733c0-.576.467-1.044 1.043-1.044z"
+                        />
+                        <path
+                            class="fill-current text-black"
+                            d="M10.534 10.135a7.304 7.304 0 11-1.729 7.597 1.043 1.043 0 011.969-.694 5.217 5.217 0 107.445-6.3 5.225 5.225 0 00-6.088.757l-.145.14-3.228 3.032a1.043 1.043 0 01-1.503-1.444l.074-.077 3.205-3.01z"
+                        />
+                    </svg>
+
+                    <svg class="w-8 h-8 ml-2" viewBox="0 0 30 30" data-target="video.unmuteIcon" data-action="click->video#volume">
+                        <path class="fill-current text-white" d="M28.91 14.955c0 7.707-6.248 13.955-13.955 13.955S1 22.662 1 14.955 7.248 1 14.955 1 28.91 7.248 28.91 14.955" />
+                        <path class="fill-current text-black" d="M18.834 23.363c.75 0 .875-.364.875-.834v-8.02l-5.236 5.217c1.556 1.418 3.869 3.637 4.361 3.637" />
+                        <path
+                            class="fill-current text-black"
+                            d="M23.785 8.043a.828.828 0 10-1.169-1.173l-2.907 2.896v-2.41c0-.47 0-.907-.875-.834-.503.042-5.694 4.82-5.694 4.82H9.33c-.235 0-.46.152-.46.387v6.452c0 .235.225.387.46.387h1.545l-4.353 4.337a.828.828 0 101.169 1.173L23.785 8.043z"
+                        />
+                    </svg>
+
+                    <svg class="hidden w-8 h-8 ml-2" viewBox="0 0 30 30" data-target="video.muteIcon" data-action="click->video#volume">
+                        <path class="fill-current text-white" d="M28.91 14.955c0 7.707-6.248 13.955-13.955 13.955S1 22.662 1 14.955 7.248 1 14.955 1 28.91 7.248 28.91 14.955" />
+                        <path
+                            class="fill-current text-black"
+                            d="M19.71 7.356c0-.47 0-.907-.876-.834-.503.042-5.694 4.82-5.694 4.82H9.33c-.234 0-.458.141-.458.376v6.463c0 .235.224.387.458.387h3.811s5.191 4.772 5.694 4.814c.875.073.875-.37.875-.838V7.356z"
+                        />
+                    </svg>
+                </span>
+            </section>
+
+            <section id="news" class="relative pt-16 px-6 bg-black">
+                <div class="container mx-auto xl:flex items-start pt-8 pb-12 border-t border-white">
+                    <h2 class="sm-reveal load-hidden text-2xl leading-tight font-display uppercase tracking-widest pt-12 xl:w-1/6">
+                        News
+                    </h2>
+
+                    <div class="md:flex flex-wrap -mx-2 xl:w-5/6 pt-12 lg:pt-16 xl:pt-24">
+                        <div class="flex w-full sm:w-1/2 lg:w-1/3 px-2 mb-12 sm:mb-16 xl:mb-24">
+                            <div class="flex flex-col md:max-w-sm text-lg">
+                                <a class="overflow-hidden" href="/news/roger-penrose-lecture">
+                                    <h3 class="sm-reveal load-hidden text-xl font-display block mb-2 uppercase tracking-wider leading-tight">
+                                        Roger Penrose Lecture
+                                    </h3>
+                                </a>
+                                <span class="inline-block w-12 border-white border-b-2 mb-3" aria-hidden="true"></span>
+                                <div class="text-sm leading-snug mt-auto">
+                                    <a class="font-bold" href="/news/roger-penrose-lecture">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex w-full sm:w-1/2 lg:w-1/3 px-2 mb-12 sm:mb-16 xl:mb-24">
+                            <div class="flex flex-col md:max-w-sm text-lg">
+                                <a class="overflow-hidden" href="/news/it-can-be-done-an-earth-day-message">
+                                    <h3 class="sm-reveal load-hidden text-xl font-display block mb-2 uppercase tracking-wider leading-tight">
+                                        It can be done - An Earth Day Message
+                                    </h3>
+                                </a>
+                                <span class="inline-block w-12 border-white border-b-2 mb-3" aria-hidden="true"></span>
+                                <div class="text-sm leading-snug mt-auto">
+                                    <a class="font-bold" href="/news/it-can-be-done-an-earth-day-message">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex w-full sm:w-1/2 lg:w-1/3 px-2 mb-12 sm:mb-16 xl:mb-24">
+                            <div class="flex flex-col md:max-w-sm text-lg">
+                                <a class="overflow-hidden" href="/news/using-less-energy-the-gen-less-campaign">
+                                    <h3 class="sm-reveal load-hidden text-xl font-display block mb-2 uppercase tracking-wider leading-tight">
+                                        Using Less Energy - the Gen Less Campaign
+                                    </h3>
+                                </a>
+                                <span class="inline-block w-12 border-white border-b-2 mb-3" aria-hidden="true"></span>
+                                <div class="text-sm leading-snug mt-auto">
+                                    <a class="font-bold" href="/news/using-less-energy-the-gen-less-campaign">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex w-full sm:w-1/2 lg:w-1/3 px-2 mb-12 sm:mb-16 xl:mb-24">
+                            <div class="flex flex-col md:max-w-sm text-lg">
+                                <a class="overflow-hidden" href="/news/celebrating-professor-hawking-s-legacy">
+                                    <h3 class="sm-reveal load-hidden text-xl font-display block mb-2 uppercase tracking-wider leading-tight">
+                                        Celebrating Professor Hawking’s legacy
+                                    </h3>
+                                </a>
+                                <span class="inline-block w-12 border-white border-b-2 mb-3" aria-hidden="true"></span>
+                                <div class="text-sm leading-snug mt-auto">
+                                    <a class="font-bold" href="/news/celebrating-professor-hawking-s-legacy">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex w-full sm:w-1/2 lg:w-1/3 px-2 mb-12 sm:mb-16 xl:mb-24">
+                            <div class="flex flex-col md:max-w-sm text-lg">
+                                <a class="overflow-hidden" href="/news/royal-mint-launches-commemorative-50p-coin">
+                                    <h3 class="sm-reveal load-hidden text-xl font-display block mb-2 uppercase tracking-wider leading-tight">
+                                        Visions of the Universe
+                                    </h3>
+                                </a>
+                                <span class="inline-block w-12 border-white border-b-2 mb-3" aria-hidden="true"></span>
+                                <div class="text-sm leading-snug mt-auto">
+                                    <a class="font-bold" href="/news/royal-mint-launches-commemorative-50p-coin">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex w-full sm:w-1/2 lg:w-1/3 px-2 mb-12 sm:mb-16 xl:mb-24">
+                            <div class="flex flex-col md:max-w-sm text-lg">
+                                <a class="overflow-hidden" href="/news/launch-of-stephen-hawking-documentary">
+                                    <h3 class="sm-reveal load-hidden text-xl font-display block mb-2 uppercase tracking-wider leading-tight">
+                                        Google release Pixel 4 Phone with &#39;Night Sight&#39; camera feature
+                                    </h3>
+                                </a>
+                                <span class="inline-block w-12 border-white border-b-2 mb-3" aria-hidden="true"></span>
+                                <div class="text-sm leading-snug mt-auto">
+                                    <a class="font-bold" href="/news/launch-of-stephen-hawking-documentary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="relative bg-black w-full px-6">
+            <div class="container flex justify-end mx-auto py-6 w-full text-right" data-controller="scroll-top">
+                <div class="flex flex-col items-end cursor-pointer" data-action="click->scroll-top#slow">
+                    <svg class="w-4 h-4 inline-block fill-current text-white cursor-pointer" viewBox="0 0 25 15">
+                        <path d="M24.2 13.228a1.393 1.393 0 01-2.377.984l-9.425-9.415-9.42 9.415a1.39 1.39 0 11-1.969-1.968L12.4.859l11.394 11.385c.271.272.407.629.407.984" />
+                    </svg>
+                    <span class="inline-block">Look Up</span>
+                </div>
+            </div>
+
+            <div class="container mx-auto border-t border-white w-full">
+                <div class="flex flex-col md:flex-row md:justify-around md:items-center md:mx-auto py-4 max-w-4xl text-sm">
+                    <a href="/legal/privacy-policy">Privacy Policy</a>
+
+                    <a href="/legal/disclaimer">Disclaimer</a>
+
+                    <a href="/contact">Contact</a>
+                    <a href="https://www.stephenhawkingfoundation.org" target="_blank">www.stephenhawkingfoundation.org</a>
+                    <a href="https://www.taylorstudio.co.uk" target="_blank">Designed by www.taylorstudio.co.uk</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script1.js"></script>
+        <script src="script2.js"></script>
+    </body>
+</html>
